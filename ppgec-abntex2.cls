@@ -41,7 +41,7 @@
 \renewcommand{\imprimircapa}{%
   \begin{capa}%
     \center
-    
+
     \includegraphics[scale=0.3]{imagens/brasao}
     \vspace*{-13mm}
     {\SingleSpacing \large \imprimirinstituicao}
@@ -77,7 +77,7 @@
 
 {
 \vspace*{3.5cm}
-\large\imprimirautor 
+\large\imprimirautor
 
 \vspace*{1.5cm}
 
