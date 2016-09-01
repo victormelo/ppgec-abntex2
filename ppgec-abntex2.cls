@@ -15,6 +15,7 @@
 %% Further information about abnTeX2 are available on http://abntex2.googlecode.com/
 %%
 
+
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{ppgec-abntex2}[01/09/2016/ v1.0 Modelo do PPGEC-UPE baseado no abnTeX2]
 
@@ -25,6 +26,16 @@
 }
 \ProcessOptions\relax
 \LoadClass{abntex2}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONTES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Redefinição de fontes
+\renewcommand{\ABNTEXchapterfont}{\bfseries}
+
+
 
 %%%% alterando a capa %%%%
 \renewcommand{\imprimircapa}{%
