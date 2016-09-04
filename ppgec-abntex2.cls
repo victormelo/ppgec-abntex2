@@ -41,25 +41,28 @@
 \renewcommand{\imprimircapa}{%
   \begin{capa}%
     \center
-
+	\vspace*{-1cm}
     \includegraphics[scale=0.3]{imagens/brasao}
     \vspace*{-13mm}
     {\SingleSpacing \large \imprimirinstituicao}
 
-    \vspace*{4cm}
+    \vspace*{3.8cm}
 
     {\large\imprimirautor}
 
-    \vspace*{4cm}
+    \vspace*{2.8cm}
 
   %  \ABNTEXchapterfont\bfseries\LARGE\imprimirtitulo
-    \Huge\imprimirtitulo
-
+    \begin{SingleSpace} \Huge\imprimirtitulo \end{SingleSpace}
+    \vspace*{3.3cm}
+    
+    \normalsize\imprimirtipotrabalho
+    
 	\vfill
 
-    \large\imprimirlocal, \imprimirdata
+    \normalsize\imprimirlocal, \imprimirdata
 
-    \vspace*{1cm}
+    \vspace*{2.8cm}
   \end{capa}
 }
 
@@ -71,17 +74,18 @@
 \renewcommand{\folhaderostocontent}{
 \begin{folhaderosto}
 \centering
-\includegraphics[scale=0.25]{imagens/brasao}
+\vspace*{-1cm}
+\includegraphics[scale=0.23]{imagens/brasao}
 \vspace*{-13mm}
 {\SingleSpacing \large \imprimirinstituicao}
 
 {
-\vspace*{3.5cm}
+\vspace*{3.1cm}
 \large\imprimirautor
 
-\vspace*{1.5cm}
+\vspace*{1.2cm}
 
-{ \Huge\imprimirtitulo }
+\begin{SingleSpace} \Huge\imprimirtitulo \end{SingleSpace}
 
 \hfill
 
@@ -92,19 +96,20 @@
 %    \end{minipage}%
 \imprimirtipotrabalho
 
-\vspace*{1cm}
+\vspace*{0.5cm}
 
 \hspace{.45\textwidth}
  \begin{minipage}{.5\textwidth}
- \small\imprimirpreambulo
-\vspace*{0.3cm}
+ \SingleSpacing\small\imprimirpreambulo
 
+\vspace*{-0.5cm}
 \begin{flushright}
-\normalsize\imprimirorientador \\ [-.1cm]
+\SingleSpacing
+\normalsize\imprimirorientador \\ 
 Orientador
 
 \abntex@ifnotempty{\imprimircoorientador}{%
-  \normalsize\imprimircoorientador \\ [-.1cm]
+  \normalsize\imprimircoorientador \\
   Coorientador
 
 }
@@ -120,9 +125,9 @@ Orientador
 
 }
 
-\large\imprimirlocal, \imprimirdata
+\normalsize\imprimirlocal, \imprimirdata
 
-\vspace*{1cm}
+\vspace*{2.2cm}
 
 \end{folhaderosto}
 }
