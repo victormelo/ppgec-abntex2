@@ -35,6 +35,26 @@
 % Redefinição de fontes
 \renewcommand{\ABNTEXchapterfont}{\bfseries}
 
+% Estilo de capítulo sem ser o do abntex
+\chapterstyle{default}
+
+
+% Redefinição de nome de elementos pré-textuais
+
+\renewcommand{\listadesiglasname}{Tabela de S\'imbolos e Siglas}
+\addto\captionsbrazil{% portugues-brasil
+  %% ajusta nomes padroes do babel
+  \renewcommand{\bibname}{Refer\^encias}
+  \renewcommand{\indexname}{Sum\'ario}
+  \renewcommand{\listfigurename}{\'{I}ndice de Figuras}
+  \renewcommand{\listtablename}{\'{I}ndice de Tabelas}
+  %% ajusta nomes usados com a macro \autoref
+  \renewcommand{\pageautorefname}{p\'agina}
+  \renewcommand{\sectionautorefname}{se{\c c}\~ao}
+  \renewcommand{\subsectionautorefname}{subse{\c c}\~ao}
+  \renewcommand{\subsubsectionautorefname}{subse{\c c}\~ao}
+  \renewcommand{\paragraphautorefname}{subse{\c c}\~ao}
+}
 
 
 %%%% alterando a capa %%%%
