@@ -38,6 +38,8 @@
 % Estilo de capítulo sem ser o do abntex
 \chapterstyle{default}
 
+% Faz com que as notas de rodapé parem de resetar após novos capítulos
+\counterwithout{footnote}{chapter}	
 
 % Redefinição de nome de elementos pré-textuais
 
